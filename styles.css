@@ -1,0 +1,196 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/****************** typography *****************/
+
+body {
+  color: black;
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 3em;
+  position: relative;
+  min-height: 100%;
+}
+
+*::selection {
+  background: black;
+  color: white;
+}
+
+h1 {
+  font-family: "bodoni-urw", serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2em;
+  padding-bottom: 30px;
+}
+
+a, a.visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: gray;
+}
+
+#small-list {
+  line-height: 2em;
+  padding: 20px;
+}
+
+.flex-display a, .flex-display a:visited {
+    text-decoration: underline;
+    color: black;
+  }
+
+.flex-display a:hover {
+    color: gray;
+  }
+
+/****************** navigation *****************/
+
+nav {
+  width: 300px;
+  float: left;
+  position: fixed;
+  padding: 50px 0 0 50px;
+}
+
+.current {
+  font-weight: 400;
+}
+
+/****************** main *****************/
+
+.main {
+  margin-left: 300px;
+  margin-right: 10%;
+}
+
+.caption {
+  padding-top: 54px;
+  padding-bottom: 40px;
+  font-size: 1.1em;
+}
+
+.flex-display {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex-display p {
+  text-transform: none;
+  font-size: 1.1em;
+  line-height: 1.75em;
+  padding-bottom: 10%;
+  max-width: 90%;
+}
+
+.column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 48%;
+}
+
+.column-2 img {
+  padding-bottom: 15%;
+}
+
+.column-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 31%;
+  margin-bottom: 50px;
+}
+
+img {
+  width: 100%;
+  border-bottom: 40px transparent;
+  margin-bottom: -20px;
+}
+
+.space-between {
+  height: 30px;
+}
+
+/****************** hover overlay *****************/
+
+.hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .4s;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hover:hover .hover-overlay {
+  opacity: 1;
+  transition: .4s;
+}
+
+.hover:hover img {
+  transform: scale(1.1);
+  transition: .6s;
+}
+
+.hover-text {
+  color: white;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/****************** about *****************/
+
+#about {
+  justify-content: flex-start;
+}
+
+#about p {
+  padding: 0 0 20px 15%;
+}
+
+#connect {
+  margin-top: 23%;
+}
+
+#connect p {
+  padding: 0;
+}
+
+/****************** footer *****************/
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+footer p {
+  display: inline;
+  padding-right: 0.5em;
+  font-size: .6em;
+}
