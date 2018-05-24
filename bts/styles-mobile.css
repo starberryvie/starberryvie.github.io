@@ -1,0 +1,149 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+  margin-left: calc(100vw - 100%);
+}
+
+/***  <span class="special">:</span>  ***/
+
+/****************** typography *****************/
+
+body {
+  background: black;
+  color: white;
+  font-family: "AppleGothic",sans-serif;
+  line-height: 1.4em;
+  position: relative;
+  min-height: 100%;
+  width: 20em;
+  margin: auto;
+}
+
+@font-face {
+  font-family: Camber DEMO;
+  src: local("Camber DEMO");
+}
+
+@font-face {
+  font-family: AppleGothic;
+  src: local("Apple SD Gothic Neo");
+  font-weight: lighter;
+}
+
+*::selection {
+  background: white;
+  color: black;
+}
+
+
+a, a.visited {
+  text-decoration: none;
+  color: #BDC3C7;
+}
+
+a:hover {
+  color: #999EA1;
+}
+
+h2 {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-family: "Camber DEMO", sans-serif;
+  padding-bottom: 0.7em;
+}
+
+h3 {
+  font-size: 0.8em;
+  color: #BDC3C7;
+  text-transform: uppercase;
+  font-family: "Camber DEMO", sans-serif;
+  padding-bottom: 0.4em;
+}
+
+.special {
+  font-family: Helvetica;
+}
+
+nav {
+  width: 300px;
+  padding: 60px 0 30px 0;
+}
+
+#logo {
+  width: 20%;
+  height: auto;
+}
+
+.title {
+  padding-bottom: 2em;
+}
+
+.credits {
+  font-size: 0.9em;
+  color: #BDC3C7;
+  font-family: "Camber DEMO", sans-serif;
+  padding-bottom: 2em;
+}
+
+.album img{
+  width: 100%;
+}
+
+/****************** list *****************/
+
+.tracklist {
+  color: #D5DCE0;
+  padding: 2em 0 3em 0;
+  font-family: "Camber DEMO", sans-serif;
+}
+
+.tracklist li {
+  line-height: 2em;
+}
+
+/****************** lyrics *****************/
+
+.lyrics {
+  color: #D5DCE0;
+  padding: 10px 0 100px 0;
+}
+
+.rm {
+  color: #93D6FF;
+  padding-top: 0.5em;
+}
+
+.sg {
+  color: #FF8A87;
+  padding-top: 0.5em;
+}
+
+.jh {
+  color: #ADFFAC;
+  padding-top: 0.5em;
+}
+
+.th {
+  color: #B197FF;
+  padding-top: 0.5em;
+}
+
+.jin {
+  color: #FFA4D5;
+  padding-top: 0.5em;
+}
+
+.jm {
+  color: #FFFBAA;
+  padding-top: 0.5em;
+}
+
+.jk {
+  color: #FFB891;
+  padding-top: 0.5em;
+}
+
+.vocal {
+  color: #FFCDDB;
+  padding-top: 0.5em;
+}
