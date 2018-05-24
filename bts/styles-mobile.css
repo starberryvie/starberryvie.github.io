@@ -11,7 +11,7 @@ html {
 body {
   background: black;
   color: white;
-  font-family: "AppleGothic",sans-serif;
+  font-family: "Noto Sans",sans-serif;
   line-height: 1.4em;
   position: relative;
   min-height: 100%;
@@ -21,12 +21,18 @@ body {
 
 @font-face {
   font-family: Camber DEMO;
-  src: local("Camber DEMO");
+  src: url("CamberDEMO-Rg.otf");
 }
 
 @font-face {
   font-family: AppleGothic;
-  src: local("Apple SD Gothic Neo");
+  src: url("fonts/AppleSDGothicNeo.ttc");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: Noto Sans;
+  src: url("fonts/NotoSans-Light.ttf");
   font-weight: lighter;
 }
 
