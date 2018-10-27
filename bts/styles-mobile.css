@@ -24,18 +24,6 @@ body {
   src: url("CamberDEMO-Rg.otf");
 }
 
-@font-face {
-  font-family: AppleGothic;
-  src: url("fonts/AppleSDGothicNeo.ttc");
-  font-weight: lighter;
-}
-
-@font-face {
-  font-family: Noto Sans;
-  src: url("fonts/NotoSans-Light.ttf");
-  font-weight: lighter;
-}
-
 *::selection {
   background: white;
   color: black;
@@ -99,7 +87,7 @@ nav {
 }
 
 .title {
-  padding-bottom: 1.7em;
+  padding-bottom: 1em;
 }
 
 .albumlist {
@@ -119,7 +107,7 @@ nav {
 }
 
 .albumlist li {
-  line-height: 1.8em;
+  line-height: 2em;
 }
 
 /****************** lyrics *****************/
