@@ -126,10 +126,13 @@ nav {
     display: none;
   }
   .main {
-    margin: 5%;
+    margin: 0;
   }
   .hover-a {
-    max-width: 48.5%;
+    max-width: 32%;
+  }
+  .hover-overlay {
+    display: none;
   }
   html {
     overflow: auto;
