@@ -134,6 +134,9 @@ nav {
   html {
     overflow: auto;
   }
+  body {
+    height: auto;
+  }
 }
 /** end mobile **/
 
