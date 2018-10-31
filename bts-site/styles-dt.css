@@ -63,7 +63,7 @@ nav ul a:hover {
 /****************** navigation *****************/
 
 nav {
-  width: 300px;
+  width: 250px;
   float: left;
   position: fixed;
   padding: 50px 0 0 50px;
@@ -74,15 +74,15 @@ nav {
 }
 
 #logo{
-  width: 20%;
+  width: 25%;
   height: auto;
 }
 
 /****************** main *****************/
 
 .main {
-  margin-left: 300px;
-  margin-right: 10%;
+  margin-left: 250px;
+  margin-right: 5%;
 }
 
 .caption {
@@ -93,10 +93,7 @@ nav {
 
 .flex-display {
   display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 .flex-display p {
@@ -107,33 +104,40 @@ nav {
   max-width: 90%;
 }
 
-.column-2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 48%;
+.hover-a {
+  max-width: 23%;
+  padding: 0 1vw 1vw 0;
 }
 
-.column-2 img {
-  padding-bottom: 15%;
+@media screen and (max-width:1100px) {
+  .hover-a {
+    max-width: 31%;
+  }
 }
 
-.column-3 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 31%;
-  margin-bottom: 50px;
+@media screen and (max-width:900px) {
+  .hover-a {
+    max-width: 45%;
+  }
 }
+/** mobile **/
+@media screen and (max-width:640px) {
+  nav {
+    display: none;
+  }
+  .main {
+    margin: 5%;
+  }
+  .hover-a {
+    max-width: 48.5%;
+  }
+}
+/** end mobile **/
 
 img {
   width: 100%;
   border-bottom: 40px transparent;
   margin-bottom: -20px;
-}
-
-.space-between {
-  height: 2vw;
 }
 
 /****************** hover overlay *****************/
@@ -168,7 +172,7 @@ img {
 
 .hover-text {
   color: white;
-  font-size: 1.5vw;
+  font-size: calc(1em + 0.25vw);
   line-height: 1.2em;
   position: absolute;
   text-align: center;
