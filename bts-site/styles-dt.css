@@ -131,6 +131,9 @@ nav {
   .hover-a {
     max-width: 48.5%;
   }
+  html {
+    overflow: auto;
+  }
 }
 /** end mobile **/
 
