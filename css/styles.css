@@ -16,11 +16,20 @@ main {
 	padding: 80px 0;
 }
 
+main .intro h2 {
+	text-transform: uppercase;
+	font-size: 2em;
+	font-family: 'Poppins', 'Helvetica Neue', sans-serif;
+	padding-top: 1em;
+}
+
 main img {
 	display: block;
 	width: 100%;
 	max-width: 400px;
 	height: auto;
+	padding: 0;
+	margin: 0;
 }
 
 main a.button {
