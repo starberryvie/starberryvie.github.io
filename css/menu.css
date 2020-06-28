@@ -8,21 +8,22 @@ nav {
 	position: fixed;
 	width: 100%;
 	height: 40px;
-	background: black;
+	background: white;
 	z-index: 99;
+	box-shadow: 0 0.5px 0.5px rgb(0,0,0,0.2);
 }
 
 nav a {
-	color: white;
-	transition: all 0.1s ease-in;
+	color: black;
+	/* transition: all 0.1s ease-in; */
 }
 
 .logo {
   font-size: 1.5em;
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 80%;
+  transform: translate(-50%, -80%);
 }
 
 ul.menu {
@@ -43,7 +44,7 @@ ul.menu {
 	}
 
 	nav .menu-icon .nav-icon {
-		background: black; /*middle line color*/
+		background: white; /*middle line color*/
 		display: block;
 		height: 1.5px; /*all lines thickness*/
 		position: relative;
@@ -53,7 +54,7 @@ ul.menu {
 
 	nav .menu-icon .nav-icon:before,
 	nav .menu-icon .nav-icon:after {
-		background: white; /*hamburger color*/
+		background: black; /*hamburger color*/
 		content: '';
 		display: block;
 		height: 100%;
@@ -86,7 +87,7 @@ ul.menu {
 		padding: 130px 50px;
 		min-width: 100vw; /*YAY*/
 		min-height: 100vh;
-		background: black;
+		background: white;
 	}
 
 	/*hide middle line*/
@@ -122,14 +123,21 @@ ul.menu {
 		/*border: 2px solid;
 		margin: -2px; */
 		border: 0;
-		background: white;
-		color: black;
+		background: black;
+		color: white;
 		border-radius: 7px;
 	}
 }
 
 /*tablet landscape*/
 @media (min-width: 768px) {
+
+	.logo {
+		left: 20px;
+	  top: 80%;
+	  transform: translate(20px, -80%);
+	}
+
 	.menu-btn, .menu-icon {
 		display: none;
 	}
@@ -154,8 +162,8 @@ ul.menu {
 		/*border: 1px solid;
 		margin: -1px; */
 		border: 0;
-		background: white;
-		color: black;
+		background: black;
+		color: white;
 		border-radius: 5px;
 	}
 }
