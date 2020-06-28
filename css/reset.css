@@ -23,7 +23,7 @@ time, mark, audio, video {
     border:0;
     outline:0;
     font-size:100%;
-    vertical-align:baseline;
+    /* vertical-align:baseline; */
     background:transparent;
 }
 
@@ -54,7 +54,7 @@ a {
     margin:0;
     padding:0;
     font-size:100%;
-    vertical-align:baseline;
+    /* vertical-align:baseline; */
     background:transparent;
 	text-decoration: none;
 }
@@ -92,7 +92,7 @@ table {
 hr {
     display:block;
     height:1px;
-    border:0;  
+    border:0;
     border-top:1px solid #cccccc;
     margin:1em 0;
     padding:0;
