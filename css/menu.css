@@ -39,7 +39,7 @@ ul.menu {
 		padding: 10px; /*hamburger position*/
 		position: relative;
 		top: 50%;
-        transform: translate(0, -50%); /*center*/
+    transform: translate(0, -50%); /*center*/
 	}
 
 	nav .menu-icon .nav-icon {
@@ -79,7 +79,6 @@ ul.menu {
 
 	ul.menu {
 		display: none; /*hide menu by default*/
-		transition: background 1s ease;
 	}
 
 	.menu-btn:checked ~.menu {
@@ -105,20 +104,20 @@ ul.menu {
 		transform: rotate(45deg);
 		top: 0;
 	}
-	
+
 	ul.menu {
 		flex-direction: column;
 	}
-	
+
 	ul.menu li {
 		font-size: 2em;
 		padding: 1em 0;
 	}
-	
+
 	ul.menu li a {
 		padding: 0 5px;
 	}
-	
+
 	ul.menu li a:hover {
 		/*border: 2px solid;
 		margin: -2px; */
@@ -134,23 +133,23 @@ ul.menu {
 	.menu-btn, .menu-icon {
 		display: none;
 	}
-	
+
 	ul.menu {
 		display: flex;
 		justify-content: flex-end;
 	}
-	
+
 	ul.menu li {
 		padding: 0 1em;
 		top: 50%;
-        transform: translate(0, 80%); /*center*/
+    transform: translate(0, 80%); /*center*/
 	}
-	
+
 	ul.menu li a {
 		padding: 0 5px;
 		font-size: 0.9em;
 	}
-	
+
 	ul.menu li a:hover {
 		/*border: 1px solid;
 		margin: -1px; */
@@ -173,5 +172,5 @@ ul.menu {
 
 /*iPhone X*/
 @media (max-width: 375px) {
-	
+
 }
