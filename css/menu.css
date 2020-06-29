@@ -1,52 +1,44 @@
-@charset "UTF-8";
-/*mobile portrait*/
 
-/*nav bar*/
-
+/*global nav*/
 nav {
 	display: block;
-	position: fixed;
-	width: 100%;
+	position: fixed; /*fixed navigation*/
+	width: 100%; /*full width*/
 	height: 40px;
-	background: white;
-	z-index: 99;
-	box-shadow: 0 0.5px 0.5px rgb(0,0,0,0.2);
+	background: white; /*nav background*/
+	z-index: 99; /*arrange front*/
+	box-shadow: 0 0.5px 1px rgb(0,0,0,0.2); /*nav shadow*/
 }
 
 nav a {
-	color: black;
-	/* transition: all 0.1s ease-in; */
+	color: black; /*nav link text color*/
 }
 
 .logo {
-  font-size: 1.5em;
+  font-size: 1.5em; /*logo font size*/
   position: absolute;
-  left: 50%;
-  top: 80%;
+  left: 50%; /*logo horizontally centered*/
+  top: 80%; /*logo vertically centered*/
   transform: translate(-50%, -80%);
 }
 
-ul.menu {
-	display: none;
-}
-
+/*mobile only*/
 @media (max-width: 767px) {
 
 	/* hamburger icon */
-
 	nav .menu-icon {
 		cursor: pointer; /*indicate clickable button*/
-		float: left; /*float side*/
+		float: left; /*float to left*/
 		padding: 10px; /*hamburger position*/
 		position: relative;
-		top: 50%;
-    transform: translate(0, -50%); /*center*/
+		top: 50%; /*hamburger in center*/
+    transform: translate(0, -50%);
 	}
 
 	nav .menu-icon .nav-icon {
-		background: white; /*middle line color*/
+		background: white; /*middle line color, hide*/
 		display: block;
-		height: 1.5px; /*all lines thickness*/
+		height: 1.5px; /*thickness of all lines*/
 		position: relative;
 		transition: background 0.1s; /*middle line fade out speed*/
 		width: 20px; /*hamburger lines length*/
@@ -59,18 +51,16 @@ ul.menu {
 		display: block;
 		height: 100%;
 		position: absolute;
-		transition: all 0.1s; /*top, bottom lines rotation speed*/
+		transition: all 0.1s; /*top+bottom lines rotation speed*/
 		width: 100%; /*hamburger length*/
 	}
 
-	/*bottom hamburger line position*/
 	nav .menu-icon .nav-icon:before {
-		top: 3px;
+		top: 3px; /*bottom hamburger line position*/
 	}
 
-	/*top hamburger line position*/
 	nav .menu-icon .nav-icon:after {
-		top: -3px;
+		top: -3px; /*top hamburger line position*/
 	}
 
 	/* menu btn */
@@ -79,92 +69,99 @@ ul.menu {
 	}
 
 	ul.menu {
-		display: none; /*hide menu by default*/
+		display: none; /*hide menu when not checked*/
 	}
 
 	.menu-btn:checked ~.menu {
-		display: block; /*show menu when checked*/
-		padding: 130px 50px;
-		min-width: 100vw; /*YAY*/
-		min-height: 100vh;
-		background: white;
+		display: block; /*expand menu when checked*/
+		padding: 130px 20%; /*padding around text*/
+		min-width: 100vw; /*width of expanded menu background*/
+		min-height: 100vh; /*height^^*/
+		background: white; /*expanded menu background color*/
 	}
 
-	/*hide middle line*/
 	.menu-icon .nav-icon,
 	.menu-btn:checked ~ .menu-icon .nav-icon{
-		background: transparent;
+		background: transparent; /*hide middle line when checked*/
 	}
 
 	.menu-btn:checked ~ .menu-icon .nav-icon:before {
-		transform: rotate(-45deg);
+		transform: rotate(-45deg); /*botton line rotation*/
 		top: 0;
 	}
 
 	.menu-btn:checked ~ .menu-icon .nav-icon:after {
-		transform: rotate(45deg);
+		transform: rotate(45deg); /*top line rotation*/
 		top: 0;
 	}
 
 	ul.menu {
-		flex-direction: column;
+		flex-direction: column; /*display menu in column*/
 	}
 
 	ul.menu li {
-		font-size: 2em;
-		padding: 1em 0;
+		font-size: 1.5em; /*menu text size*/
+		padding: 1em 5px; /*padding between list*/
 	}
 
 	ul.menu li a {
-		padding: 0 5px;
+		padding: 0 5px; /*box padding around text*/
 	}
 
 	ul.menu li a:hover {
-		/*border: 2px solid;
-		margin: -2px; */
-		border: 0;
-		background: black;
-		color: white;
-		border-radius: 7px;
+		/*border: 2px solid;*/
+		margin: 0px; /*offset border width*/
+		border: 0; /*no border*/
+		background: white; /*background around text on hover*/
+		color: black; /*text color on hover*/
+		border-radius: 0px; /*roundness*/
+		border-bottom: 2px solid black;
 	}
 }
 
 /*tablet landscape*/
 @media (min-width: 768px) {
-
 	.logo {
-		left: 20px;
-	  top: 80%;
+		left: 20px; /*logo to left on fullscreen*/
+	  top: 80%; /*logo vertically centered*/
 	  transform: translate(20px, -80%);
 	}
 
 	.menu-btn, .menu-icon {
-		display: none;
+		display: none; /*hide hamburger on fullscreen*/
 	}
 
 	ul.menu {
 		display: flex;
-		justify-content: flex-end;
+		justify-content: flex-end; /*menu aligned right*/
 	}
 
 	ul.menu li {
-		padding: 0 1em;
-		top: 50%;
-    transform: translate(0, 80%); /*center*/
+		padding: 0; /*padding between menu list*/
+		top: 50%; /*menu vertically centered*/
+    transform: translate(0, 80%);
 	}
 
 	ul.menu li a {
-		padding: 0 5px;
-		font-size: 0.9em;
+		padding: 8px 1.3em; /*padding around menu text*/
+		font-size: 0.9em; /*menu text size*/
 	}
 
 	ul.menu li a:hover {
 		/*border: 1px solid;
-		margin: -1px; */
-		border: 0;
-		background: black;
-		color: white;
-		border-radius: 5px;
+		margin: -1px; offset menu*/
+
+		/*round black border*/
+		/*border: 0; /*no border*/
+		/*background: black; /*black background on hover*/
+		/*color: white; /*white text on hover*/
+		/*border-radius: 5px; /*roundness*/
+
+		/*border-bottom*/
+		color: black;
+		border-bottom: 1px solid;
+		border-color: black;
+
 	}
 }
 
@@ -175,10 +172,5 @@ ul.menu {
 
 /*laptop*/
 @media (min-width: 1280px) {
-
-}
-
-/*iPhone X*/
-@media (max-width: 375px) {
 
 }

@@ -1,28 +1,32 @@
 body {
-	font-family: 'Neue Haas Unica Pro', 'Helvetica Neue', sans-serif;
+	font-family: 'Libre Franklin', 'Helvetica Neue', sans-serif; /*base font*/
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1em;
+}
+
+p::selection {
+	color: white;
+	background: black;
 }
 
 ul.menu li {
-	text-transform: uppercase;
-	font-family: 'Poppins', 'Helvetica Neue', sans-serif;
+	text-transform: uppercase; /*uppercase menu*/
+	font-family: 'Poppins', 'Helvetica Neue', sans-serif; /*menu font*/
 }
 
-/*main*/
+/********** main **********/
 
 main {
 	display: block;
-	margin: auto;
+	margin: auto; /*center all content*/
 	max-width: 95%;
-	padding: 80px 0;
+	padding: 80px 0; /*padding on top*/
 }
 
-main .intro h2 {
-	text-transform: uppercase;
-	font-size: 2em;
-	font-family: 'Poppins', 'Helvetica Neue', sans-serif;
-	padding-top: 1em;
-}
+/*intro*/
 
+/*header image*/
 main img {
 	display: block;
 	width: 100%;
@@ -30,24 +34,25 @@ main img {
 	height: auto;
 }
 
+/*buttons*/
 main a.button {
 	font-family: 'Poppins', 'Helvetica Neue', sans-serif;
 	font-size: 0.8em;
 	font-weight: 500;
 	text-transform: uppercase;
 	border: 1px solid;
-	border-radius: 5px;
+	border-radius: 0px;
 	color: black;
 	padding: 7px 7px 6px;
 }
 
 main a:hover.button {
 	border: 0;
-	border-radius: 5px;
+	border-radius: 0px;
 	color: white;
 	background: black;
 	mix-blend-mode: multiply; /*transparent text*/
-	padding: 8px 8px 7px; /*displace border*/
+	padding: 8px 8px 7px; /*offset border*/
 }
 
 main .intro {
@@ -56,6 +61,14 @@ main .intro {
 	justify-content: center;
 	margin-bottom: 20px;
 	height: 100%;
+}
+
+main .intro h2 {
+	text-transform: lowercase;
+	font-size: 2.5em;
+	font-family: 'Gilroy', 'Helvetica Neue', sans-serif;
+	padding-top: 1em;
+	padding-right: 30px;
 }
 
 main .intro img {
@@ -86,6 +99,8 @@ main .description h5 {
 	font-family: 'Poppins', 'Helvetica Neue', sans-serif;
 	font-weight: 600;
 	text-transform: uppercase;
+	font-size: 1.2em;
+	padding-bottom: 0.2em;
 }
 
 main .block-group {
@@ -94,10 +109,12 @@ main .block-group {
 	flex-flow: wrap row;
 }
 
+/*individual blocks*/
 main .block {
 	padding: 30px;
-	border-radius: 20px;
-	max-width: 335px;
+	border-radius: 0px;
+	flex: 1 1 300px;
+	max-width: 500px;
 	height: auto;
 	margin: 7px;
 	padding: 10px;
@@ -118,7 +135,7 @@ main .block img {
 	padding: 40px 0 10px;
 }
 
-@media (min-width: 777px) {
+@media (min-width: 768px) {
 	main .intro .description {
 		text-align: left;
 	}
