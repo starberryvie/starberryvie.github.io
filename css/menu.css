@@ -7,7 +7,7 @@ nav {
 	height: 40px;
 	background: white; /*nav background*/
 	z-index: 99; /*arrange front*/
-	box-shadow: 0 0.5px 1px rgb(0,0,0,0.2); /*nav shadow*/
+	box-shadow: 0 0.1px 3px rgb(0,0,0,0.2); /*nav shadow*/
 }
 
 nav a {
@@ -74,10 +74,14 @@ nav a {
 
 	.menu-btn:checked ~.menu {
 		display: block; /*expand menu when checked*/
-		padding: 130px 20%; /*padding around text*/
-		min-width: 100vw; /*width of expanded menu background*/
-		min-height: 100vh; /*height^^*/
-		background: white; /*expanded menu background color*/
+		padding: 100px 20%; /*padding around text*/
+		top: 40px; /*offset inset shadow*/
+		left: -20px; /*hide shadows on side*/
+		transform: translate(-20px,40px);
+		box-shadow: inset 0.1px 0.1px 3px rgb(0,0,0,0.2); /*inner shadow*/
+		width: calc(100vw + 40px); /*hide shadows on side*/
+		min-height: 100vh; /*height*/
+		background: rgb(255,255,255,0.95); /*expanded menu background color*/
 	}
 
 	.menu-icon .nav-icon,
@@ -100,7 +104,7 @@ nav a {
 	}
 
 	ul.menu li {
-		font-size: 1.5em; /*menu text size*/
+		font-size: 1.7em; /*menu text size*/
 		padding: 1em 5px; /*padding between list*/
 	}
 

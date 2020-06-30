@@ -1,5 +1,5 @@
 body {
-	font-family: 'Libre Franklin', 'Helvetica Neue', sans-serif; /*base font*/
+	font-family: 'NeueHaasUnica-Light', 'Neue Haas Unica', 'Helvetica Neue', sans-serif; /*base font*/
 	font-weight: 400;
 	font-style: normal;
 	font-size: 1em;
@@ -65,8 +65,8 @@ main .intro {
 
 main .intro h2 {
 	text-transform: lowercase;
+	font-weight: 500;
 	font-size: 2.5em;
-	font-family: 'Gilroy', 'Helvetica Neue', sans-serif;
 	padding-top: 1em;
 	padding-right: 30px;
 }
@@ -81,6 +81,11 @@ main .description {
 	line-height: 1.5em;
 	max-width: 300px;
 	text-align: center;
+	/* font-family: 'Neue Haas Unica'; */
+}
+
+main .description p {
+	/* text-align: left; */
 }
 
 main .description p {
@@ -96,12 +101,14 @@ main span.highlight {
 }
 
 main .description h5 {
-	font-family: 'Poppins', 'Helvetica Neue', sans-serif;
-	font-weight: 600;
-	text-transform: uppercase;
+	font-family: 'NeueHaasUnica-Medium', 'Helvetica Neue', sans-serif;
+	font-weight: 400;
+	text-transform: ;
 	font-size: 1.2em;
 	padding-bottom: 0.2em;
 }
+
+/*blocks*/
 
 main .block-group {
 	display: flex;
@@ -127,6 +134,10 @@ main .block .description {
 main .block .description p {
 	font-size: 0.9em;
 	line-height: 1.5em;
+}
+
+main .block .description p.tag {
+	color: #C75571;
 }
 
 main .block img {
