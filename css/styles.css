@@ -20,7 +20,8 @@ ul.menu li {
 main {
 	display: block;
 	margin: auto; /*center all content*/
-	max-width: 95%;
+	width: 97%;
+	max-width: 1200px;
 	padding: 80px 0; /*padding on top*/
 }
 
