@@ -152,14 +152,6 @@ nav a {
 	}
 
 	ul.menu li a:hover {
-		/*border: 1px solid;
-		margin: -1px; offset menu*/
-
-		/*round black border*/
-		/*border: 0; /*no border*/
-		/*background: black; /*black background on hover*/
-		/*color: white; /*white text on hover*/
-		/*border-radius: 5px; /*roundness*/
 
 		/*border-bottom*/
 		color: black;
