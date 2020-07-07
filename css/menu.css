@@ -119,7 +119,7 @@ nav a {
 		background: white; /*background around text on hover*/
 		color: black; /*text color on hover*/
 		border-radius: 0px; /*roundness*/
-		border-bottom: 2px solid black;
+		border-bottom: 2px solid #C75571;
 	}
 }
 
@@ -163,7 +163,7 @@ nav a {
 
 		/*border-bottom*/
 		color: black;
-		border-bottom: 2px solid #C75571;
+		border-bottom: 3px solid #C75571;
 
 	}
 }

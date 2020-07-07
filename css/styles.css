@@ -33,16 +33,16 @@ main a.button {
 	font-weight: 500;
 	text-transform: uppercase;
 	border: 1px solid;
-	border-radius: 5px;
-	color: black;
+	/* border-radius: 5px; */
+	color: #C75571;
 	padding: 7px 7px 6px;
 }
 
 main a:hover.button {
 	border: 0;
-	border-radius: 5px;
+	/* border-radius: 5px; */
 	color: white;
-	background: black;
+	background: #C75571;
 	mix-blend-mode: multiply; /*transparent text*/
 	padding: 8px 8px 7px; /*displace border*/
 }
@@ -54,13 +54,11 @@ main .highlight {
 .case {
 	margin: auto;
 	max-width: 1100px;
-	display: flex;
+	/* display: flex; */
 	height: 100%;
-	flex-wrap: wrap;
 }
 
 .case img {
-	display: block;
 	width: 100%;
 	height: auto;
 }
@@ -71,16 +69,18 @@ main .highlight {
 
 @media (min-width: 900px) {
 	.case {
-		flex-wrap: nowrap;
-		justify-content: space-between;
+		/* display: block; */
+		display: flex;
+		justify-content: center;
 	}
 
 	.case img {
-		max-width: 60%;
+		/* float: left; */
 	}
 
 	.case .description {
-		max-width: 35%;
+		/* float: right; */
+		width: 35%;
 	}
 }
 
@@ -92,16 +92,10 @@ main .highlight {
 }
 
 .case .section {
-	padding-top: 20px;
+	padding: 20px 0 30px;
 }
 
-.case .description .section h3 {
-	font-size: 1.2em;
-	text-transform: uppercase;
-	line-height: 2.5em;
-}
-
-.case .description .section p {
+.case .description p {
 	font-size: 1.125em;
 	line-height: 1.4em;
 }
