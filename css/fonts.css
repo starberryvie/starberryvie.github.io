@@ -18,10 +18,11 @@
 */
 
 @font-face {
-  font-family: 'Harmonia Demo';
-  src: url('fonts/HarmoniaSans-Regular.woff2') format('woff2'),
-  url('fonts/HarmoniaSans-Regular.woff') format('woff'),
-  url('fonts/HarmoniaSans-Regular.ttf') format(truetype);
-	font-weight: 400;
-  font-style: normal;
+    font-family: 'Harmonia Demo';
+    src: url('../fonts/HarmoniaDemo-Regular.woff2') format('woff2'),
+        url('../fonts/HarmoniaDemo-Regular.woff') format('woff'),
+        url('../fonts/HarmoniaDemo-Regular.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
