@@ -6,7 +6,7 @@ ul.menu li {
 	text-transform: uppercase;
 }
 
-/*main*/
+/*********** main ***********/
 
 main {
 	display: block;
@@ -33,14 +33,12 @@ main a.button {
 	font-weight: 500;
 	text-transform: uppercase;
 	border: 1px solid;
-	/* border-radius: 5px; */
 	color: #C75571;
 	padding: 7px 7px 6px;
 }
 
 main a:hover.button {
 	border: 0;
-	/* border-radius: 5px; */
 	color: white;
 	background: #C75571;
 	mix-blend-mode: multiply; /*transparent text*/
@@ -54,7 +52,6 @@ main .highlight {
 .case {
 	margin: auto;
 	max-width: 1100px;
-	/* display: flex; */
 	height: 100%;
 	padding-bottom: 40px;
 }
@@ -65,12 +62,11 @@ main .highlight {
 }
 
 .case .description {
-	padding: 2% 22px;
+	padding: 22px;
 }
 
 @media (min-width: 900px) {
 	.case {
-		/* display: block; */
 		display: flex;
 		justify-content: center;
 	}
@@ -84,14 +80,16 @@ main .highlight {
 .case .description h2,
 .case .description h2 a {
 	font-family: 'Baskerville', Georgia, 'Hoefler Text', 'Times New Roman', serif;
+	/* font-style: italic; */
 	font-weight: 400;
-	font-size: 1.6em;
-	line-height: 1.5em;
+	font-size: 1.5em;
+	line-height: 1.4em;
 	color: black;
+	/* text-transform: uppercase; */
 }
 
 .case .section {
-	padding: 20px 0 30px;
+	padding: 15px 0 30px;
 }
 
 .case .description p {
@@ -99,7 +97,7 @@ main .highlight {
 	line-height: 1.4em;
 }
 
-/*footer*/
+/*********** footer ***********/
 
 footer {
 	position: relative;
