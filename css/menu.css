@@ -18,8 +18,8 @@ nav a {
   font-size: 1.5em; /*logo font size*/
   position: absolute;
   left: 50%; /*logo horizontally centered*/
-  top: 80%; /*logo vertically centered*/
-  transform: translate(-50%, -80%);
+  top: 5px; /*logo vertically centered*/
+  transform: translate(-50%, 5px);
 }
 
 /*mobile only*/
@@ -127,8 +127,8 @@ nav a {
 @media (min-width: 768px) {
 	.logo {
 		left: 20px; /*logo to left on fullscreen*/
-	  top: 80%; /*logo vertically centered*/
-	  transform: translate(20px, -80%);
+	  top: 5px; /*logo vertically centered*/
+	  transform: translate(20px, 5px);
 	}
 
 	.menu-btn, .menu-icon {
@@ -155,7 +155,7 @@ nav a {
 
 		/*border-bottom*/
 		color: black;
-		border-bottom: 3px solid #C75571;
+		border-bottom: 2px solid #C75571;
 
 	}
 }
