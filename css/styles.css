@@ -1,5 +1,7 @@
 body {
 	font-family: 'Harmonia Demo', 'Helvetica Neue', sans-serif;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
 }
 
 ul.menu li {
@@ -17,7 +19,7 @@ main {
 }
 
 main .intro {
-	padding: 40px;
+	padding: 50px 40px 20px 40px;
 }
 
 main .intro p {
@@ -53,7 +55,7 @@ main .highlight {
 	margin: auto;
 	max-width: 1100px;
 	height: 100%;
-	padding-bottom: 40px;
+	padding: 30px 0;
 }
 
 .case img {
@@ -80,12 +82,10 @@ main .highlight {
 .case .description h2,
 .case .description h2 a {
 	font-family: 'Baskerville', Georgia, 'Hoefler Text', 'Times New Roman', serif;
-	/* font-style: italic; */
 	font-weight: 400;
 	font-size: 1.5em;
-	line-height: 1.4em;
+	line-height: 1.2em;
 	color: black;
-	/* text-transform: uppercase; */
 }
 
 .case .section {
@@ -138,8 +138,8 @@ footer .text .category {
 }
 
 footer .text h6, footer .text h6 a {
-	font-weight: 500;
 	text-transform: uppercase;
+	font-size: 1.1em;
 	padding-bottom: 1em;
 	color: white;
 }
@@ -147,10 +147,10 @@ footer .text h6, footer .text h6 a {
 footer .text .category ul li,
 footer .text .category ul li a {
 	padding-bottom: 0.5em;
-	font-size: 0.9em;
+	font-size: 1em;
 	color: rgba(255, 255, 255, 0.7)
 }
 
-footer .text .category ul li a:hover {
+footer .text .category a:hover {
 	text-decoration: underline;
 }
