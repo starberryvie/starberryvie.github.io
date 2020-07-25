@@ -29,7 +29,7 @@ nav a {
 	nav .menu-icon {
 		cursor: pointer; /*indicate clickable button*/
 		float: left; /*float to left*/
-		padding: 10px; /*hamburger position*/
+		padding: 15px; /*hamburger position*/
 		position: relative;
 		top: 50%; /*hamburger in center*/
     transform: translate(0, -50%);
@@ -38,7 +38,7 @@ nav a {
 	nav .menu-icon .nav-icon {
 		background: white; /*middle line color, hide*/
 		display: block;
-		height: 1.5px; /*thickness of all lines*/
+		height: 1.25px; /*thickness of all lines*/
 		position: relative;
 		transition: background 0.1s; /*middle line fade out speed*/
 		width: 20px; /*hamburger lines length*/
@@ -106,6 +106,7 @@ nav a {
 	ul.menu li {
 		font-size: 1.7em; /*menu text size*/
 		padding: 1em 5px; /*padding between list*/
+		/* text-align: center; /*center menu on expand*/
 	}
 
 	ul.menu li a {
@@ -123,12 +124,12 @@ nav a {
 	}
 }
 
-/*tablet landscape*/
+/*tablet landscape and above*/
 @media (min-width: 768px) {
 	.logo {
-		left: 20px; /*logo to left on fullscreen*/
+		left: 10px; /*logo to left on fullscreen*/
 	  top: 5px; /*logo vertically centered*/
-	  transform: translate(20px, 5px);
+	  transform: translate(10px, 5px);
 	}
 
 	.menu-btn, .menu-icon {
@@ -152,20 +153,8 @@ nav a {
 	}
 
 	ul.menu li a:hover {
-
 		/*border-bottom*/
 		color: black;
 		border-bottom: 2px solid #C75571;
-
 	}
-}
-
-/*tablet portrait*/
-@media (min-width: 1024px) {
-
-}
-
-/*laptop*/
-@media (min-width: 1280px) {
-
 }
