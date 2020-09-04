@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<a href="{{ page.url }}"><h1 class="page">{{ page.title }}</h1></a>
+
+<p class="tag page">
+	{% if page.tags.size > 0 %}
+	{{ page.tags | sort | join: ", " }}
+	{% endif %}
+</p>
+
+<img class="page" src="/assets/img/{{ page.featured-image }}" alt="{{ page.featured-image-alt }}" />
+
+	{{ content }}

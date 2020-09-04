@@ -119,15 +119,20 @@ nav a {
 		border: 0; /*no border*/
 		background: white; /*background around text on hover*/
 		color: black; /*text color on hover*/
-		border-radius: 0px; /*roundness*/
-		border-bottom: 2px solid #C75571;
+	}
+
+	ul.menu li a:hover,
+	ul.menu li.active a {
+		/*border-bottom*/
+		color: black;
+		border-bottom: 2px solid var(--highlight);
 	}
 }
 
 /*tablet landscape and above*/
 @media (min-width: 768px) {
 	.logo {
-		left: 10px; /*logo to left on fullscreen*/
+		left: calc(50vw - 560px);
 	  top: 5px; /*logo vertically centered*/
 	  transform: translate(10px, 5px);
 	}
@@ -139,6 +144,7 @@ nav a {
 	ul.menu {
 		display: flex;
 		justify-content: flex-end; /*menu aligned right*/
+		margin-right: calc(50vw - 560px);
 	}
 
 	ul.menu li {
@@ -152,9 +158,25 @@ nav a {
 		font-size: 0.9em; /*menu text size*/
 	}
 
-	ul.menu li a:hover {
+	ul.menu li a:hover,
+	ul.menu li.active a {
 		/*border-bottom*/
 		color: black;
-		border-bottom: 2px solid #C75571;
+		border-bottom: 2px solid var(--highlight);
+	}
+
+	ul.menu li.active a:hover{
+		/*border-bottom*/
+		color: black;
+		border-bottom: 2px solid var(--highlight);
+	}
+}
+
+@media (max-width: 1200px) and (min-width: 768px){
+	.logo {
+		left: 4.2vw;
+	}
+	ul.menu {
+		margin-right: 4.2vw;
 	}
 }

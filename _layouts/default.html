@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{ page.title }} | {{ site.title }}</title>
+	<link rel="preload" as="font" href="/assets/fonts/HarmoniaDemo-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" as="font" href="/assets/fonts/HarmoniaDemo-Regular.woff" type="font/woff" crossorigin="anonymous">
+	<link rel="preload" as="font" href="/assets/fonts/HarmoniaDemo-Regular.ttf" type="font/ttf" crossorigin="anonymous">
+	<link rel="stylesheet" href="/assets/css/fonts.css">
+	<link rel="stylesheet" href="/assets/css/reset.css">
+	<link rel="stylesheet" href="/assets/css/styles.css">
+	<link rel="stylesheet" href="/assets/css/menu.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<nav>
+		<input class="menu-btn" type="checkbox" id="menu-btn" />
+		<label class="menu-icon" for="menu-btn">
+			<span class="nav-icon"></span>
+		</label>
+		<a class="logo" href="/work/">
+			<img alt="Vienna Li" src="/assets/img/baskerville-logo.png" width="80" height="auto">
+		</a>
+		<ul class="menu">
+			{% assign pages = site.pages | sort: "order" %} <!-- not working -->
+			{% for node in site.pages %}
+			<li{% if page.url == node.url %} class="active"{% endif %}>
+				<a href="{{ node.url }}">{{ node.title }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+
+	</nav>
+<main>
+	{{ content }}
+</main>
+
+	<footer>
+		<div class="text">
+			<div class="category">
+				<h6><a href="#">Work</a></h6>
+				<ul>
+					<li><a href="#">Remindful</a></li>
+					<li><a href="#">Paper</a></li>
+					<li><a href="#">Expedia</a></li>
+				</ul>
+			</div>
+			<div class="category">
+				<h6><a href="#">Blog</a></h6>
+				<ul>
+					<li><a href="#">Beautiful Era</a></li>
+					<li><a href="#">Spotify</a></li>
+					<li><a href="#">Converse</a></li>
+				</ul>
+			</div>
+			<div class="category">
+				<h6><a href="#">About</a></h6>
+				<ul>
+					<li><a href="#">Remindful</a></li>
+					<li><a href="#">Paper</a></li>
+					<li><a href="#">Expedia</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="info">
+			<div class="copyright">
+				<p>© Vienna Li 2020</p>
+			</div>
+			<div class="social">
+				<a href="https://www.linkedin.com/"><img alt="linkedin" src="/assets/svg/linkedin.svg" width="15" height="auto"></a>
+				<a href="https://www.instagram.com/"><img alt="instagram" src="/assets/svg/instagram.svg" width="15" height="auto"></a>
+				<a href="https://www.facebook.com/"><img alt="facebook" src="/assets/svg/facebook.svg" width="15" height="auto"></a>
+			</div>
+
+		</div>
+	</footer>
+</body>
+
+</html>
