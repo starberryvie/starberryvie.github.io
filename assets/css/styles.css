@@ -1,0 +1,237 @@
+:root {
+  --highlight: #C75571;
+  --main-max-width: 1100px;
+  --content-max-width: 768px;
+}
+
+html {
+  background: black;
+ /*overscroll color chrome*/
+}
+
+body {
+  font-family: 'Harmonia Demo', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background: white;
+  font-size: 1em;
+}
+
+body:after {
+  content: '';
+  position: fixed;
+  top: 50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  z-index: -99;
+  background: black;
+ /*overscroll color safari*/
+}
+
+h1, h1 a {
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: -0.01em;
+  line-height: 1.7em;
+  color: black;
+}
+
+h2 {
+  max-width: var(--content-max-width);
+  margin: auto;
+  font-size: 1.6em;
+  letter-spacing: -0.01em;
+  padding-bottom: 1em;
+}
+
+ul.menu li {
+  text-transform: uppercase;
+}
+
+/*********** main ***********/
+
+
+main {
+  display: block;
+  margin: auto;
+ /*center all content*/
+  width: 90%;
+  max-width: var(--main-max-width);
+  padding: 80px 0;
+}
+
+p {
+  max-width: var(--content-max-width);
+  margin: auto;
+  padding-bottom: 1em;
+  line-height: 1.7em;
+}
+
+h2.post {
+  padding-bottom: 0em;
+}
+
+img.page {
+  padding: 30px 0;
+  max-width: var(--main-max-width);
+  margin: auto;
+}
+
+main img {
+  width: 100%;
+  margin: auto;
+}
+
+main .intro {
+  padding: 20px 40px;
+}
+
+main .intro p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+}
+
+main a.button {
+  font-size: 0.8em;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: 1px solid;
+  color: var(--highlight);
+  padding: 11px 15px 10px;
+}
+
+main a:hover.button {
+  border: 0;
+  color: white;
+  background: var(--highlight);
+  mix-blend-mode: multiply;
+ /*transparent text*/
+  padding: 12px 16px 11px;
+ /*displace border*/
+}
+
+main .highlight {
+  color: var(--highlight);
+}
+
+main p.tag {
+  color: var(--highlight);
+  padding: 0.5em 0;
+}
+
+main p.tag.page {
+  text-align: center;
+}
+
+.case {
+  margin: auto;
+  max-width: 1100px;
+  height: 100%;
+  padding: 20px 0;
+}
+
+.case img {
+  width: 100%;
+  height: auto;
+}
+
+.case .description {
+  padding-bottom: 1.5em;
+  max-width: 500px;
+}
+
+@media (min-width: 900px) {
+  .case {
+    display: flex;
+    justify-content: center;
+  }
+
+  .case .description {
+    width: 50%;
+    padding-left: 30px;
+  }
+
+}
+
+.case .description h2,
+.case .description h2 a {
+  font-weight: 500;
+  font-size: 1.3em;
+  line-height: 1.7em;
+  color: black;
+}
+
+.case .section {
+  padding-bottom: 1.5em;
+}
+
+.case .description {
+  padding-top: 20px;
+}
+
+.case .description p {
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+/*********** footer ***********/
+
+footer {
+  position: relative;
+  min-height: 200px;
+  background: black;
+  color: white;
+  padding: 45px 30px;
+  z-index: 0;
+}
+
+footer .info {
+  position: absolute;
+  bottom: 30px;
+  font-size: .9em;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100vw - 70px);
+  line-height: 30px;
+}
+
+footer .info .social {
+  display: flex;
+  width: 65px;
+  justify-content: space-between;
+}
+
+footer .text {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  margin-bottom: 60px;
+}
+
+footer .text .category {
+  width: 175px;
+  margin-bottom: 20px;
+}
+
+footer .text h6, footer .text h6 a {
+  font-size: 1.1em;
+  padding-bottom: 1em;
+  color: white;
+  display: none;
+}
+
+footer .text .category ul li,
+footer .text .category ul li a {
+  padding-bottom: 0.5em;
+  font-size: 1em;
+  color: white;
+}
+
+footer .text .category a:hover {
+  text-decoration: underline;
+}

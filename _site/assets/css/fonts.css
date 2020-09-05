@@ -1,0 +1,28 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3922367, 2020-07-05T18:22:12-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: HarmoniaDemo-Regular by Monotype
+ * URL: https://www.myfonts.com/fonts/mti/harmonia-sans/Demo/
+ * Copyright: Copyright &amp;#x00A9; 2016 Monotype Imaging Inc. All rights reserved.
+ *
+ *
+ *
+ * © 2020 MyFonts Inc
+*/
+
+@font-face {
+    font-family: 'Harmonia Demo';
+    src: url('../fonts/HarmoniaDemo-Regular.woff2') format('woff2'),
+        url('../fonts/HarmoniaDemo-Regular.woff') format('woff'),
+        url('../fonts/HarmoniaDemo-Regular.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

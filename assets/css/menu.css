@@ -1,0 +1,182 @@
+
+/*global nav*/
+nav {
+	display: block;
+	position: fixed; /*fixed navigation*/
+	width: 100%; /*full width*/
+	height: 40px;
+	background: white; /*nav background*/
+	z-index: 99; /*arrange front*/
+	box-shadow: 0 0.1px 3px rgb(0,0,0,0.2); /*nav shadow*/
+}
+
+nav a {
+	color: black; /*nav link text color*/
+}
+
+.logo {
+  font-size: 1.5em; /*logo font size*/
+  position: absolute;
+  left: 50%; /*logo horizontally centered*/
+  top: 5px; /*logo vertically centered*/
+  transform: translate(-50%, 5px);
+}
+
+/*mobile only*/
+@media (max-width: 767px) {
+
+	/* hamburger icon */
+	nav .menu-icon {
+		cursor: pointer; /*indicate clickable button*/
+		float: left; /*float to left*/
+		padding: 15px; /*hamburger position*/
+		position: relative;
+		top: 50%; /*hamburger in center*/
+    transform: translate(0, -50%);
+	}
+
+	nav .menu-icon .nav-icon {
+		background: white; /*middle line color, hide*/
+		display: block;
+		height: 1.25px; /*thickness of all lines*/
+		position: relative;
+		transition: background 0.1s; /*middle line fade out speed*/
+		width: 20px; /*hamburger lines length*/
+	}
+
+	nav .menu-icon .nav-icon:before,
+	nav .menu-icon .nav-icon:after {
+		background: black; /*hamburger color*/
+		content: '';
+		display: block;
+		height: 100%;
+		position: absolute;
+		transition: all 0.1s; /*top+bottom lines rotation speed*/
+		width: 100%; /*hamburger length*/
+	}
+
+	nav .menu-icon .nav-icon:before {
+		top: 3px; /*bottom hamburger line position*/
+	}
+
+	nav .menu-icon .nav-icon:after {
+		top: -3px; /*top hamburger line position*/
+	}
+
+	/* menu btn */
+	nav .menu-btn {
+		display: none; /*hide checkbox*/
+	}
+
+	ul.menu {
+		display: none; /*hide menu when not checked*/
+	}
+
+	.menu-btn:checked ~.menu {
+		display: block; /*expand menu when checked*/
+		padding: 100px 20%; /*padding around text*/
+		top: 40px; /*offset inset shadow*/
+		left: -20px; /*hide shadows on side*/
+		transform: translate(-20px,40px);
+		box-shadow: inset 0.1px 0.1px 3px rgb(0,0,0,0.2); /*inner shadow*/
+		width: calc(100vw + 40px); /*hide shadows on side*/
+		min-height: 100vh; /*height*/
+		background: rgb(255,255,255,0.95); /*expanded menu background color*/
+	}
+
+	.menu-icon .nav-icon,
+	.menu-btn:checked ~ .menu-icon .nav-icon{
+		background: transparent; /*hide middle line when checked*/
+	}
+
+	.menu-btn:checked ~ .menu-icon .nav-icon:before {
+		transform: rotate(-45deg); /*botton line rotation*/
+		top: 0;
+	}
+
+	.menu-btn:checked ~ .menu-icon .nav-icon:after {
+		transform: rotate(45deg); /*top line rotation*/
+		top: 0;
+	}
+
+	ul.menu {
+		flex-direction: column; /*display menu in column*/
+	}
+
+	ul.menu li {
+		font-size: 1.7em; /*menu text size*/
+		padding: 1em 5px; /*padding between list*/
+		/* text-align: center; /*center menu on expand*/
+	}
+
+	ul.menu li a {
+		padding: 0 5px; /*box padding around text*/
+	}
+
+	ul.menu li a:hover {
+		/*border: 2px solid;*/
+		margin: 0px; /*offset border width*/
+		border: 0; /*no border*/
+		background: white; /*background around text on hover*/
+		color: black; /*text color on hover*/
+	}
+
+	ul.menu li a:hover,
+	ul.menu li.active a {
+		/*border-bottom*/
+		color: black;
+		border-bottom: 2px solid var(--highlight);
+	}
+}
+
+/*tablet landscape and above*/
+@media (min-width: 768px) {
+	.logo {
+		left: calc(50vw - 560px);
+	  top: 5px; /*logo vertically centered*/
+	  transform: translate(10px, 5px);
+	}
+
+	.menu-btn, .menu-icon {
+		display: none; /*hide hamburger on fullscreen*/
+	}
+
+	ul.menu {
+		display: flex;
+		justify-content: flex-end; /*menu aligned right*/
+		margin-right: calc(50vw - 560px);
+	}
+
+	ul.menu li {
+		padding: 0; /*padding between menu list*/
+		top: 50%; /*menu vertically centered*/
+    transform: translate(0, 80%);
+	}
+
+	ul.menu li a {
+		padding: 8px 1.3em; /*padding around menu text*/
+		font-size: 0.9em; /*menu text size*/
+	}
+
+	ul.menu li a:hover,
+	ul.menu li.active a {
+		/*border-bottom*/
+		color: black;
+		border-bottom: 2px solid var(--highlight);
+	}
+
+	ul.menu li.active a:hover{
+		/*border-bottom*/
+		color: black;
+		border-bottom: 2px solid var(--highlight);
+	}
+}
+
+@media (max-width: 1200px) and (min-width: 768px){
+	.logo {
+		left: 4.2vw;
+	}
+	ul.menu {
+		margin-right: 4.2vw;
+	}
+}
